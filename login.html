@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradierTech- Online Learning Platform</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:  Tahoma, 'Geneva', Verdana, sans-serif;
+    }
+
+    .main{
+        height: 100%;
+        width: 100%;
+        background-image:  url(bg2.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .form-box{
+        width: 480px;
+        height: 580px;
+        position: relative;
+        margin: 6% auto;
+        background: #ffffff54;
+        padding: 5px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .button-box{
+        
+        width: 270px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 5px rgba(241, 241, 241, 0.701);
+        border-radius: 30px;
+    }
+
+    .btn{
+        font-size: 18px;
+        padding: 10px 36.5px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+    }
+
+    #button{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 150px;
+        height: 100%;
+        background: linear-gradient(to right, #4857ffd0, #7ab9fcdf);
+        border-radius: 25px;
+    }
+
+    .input{
+        top: 180px;
+        position: absolute;
+        width: 280px;
+        transition: 0.5s;
+    }
+
+    .input-field{
+        font-size: 17px;
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid#aeaeae;
+        outline: none;
+        background: transparent;
+    }
+
+    .submit-btn{
+        font-size: 18px;
+        width: 65%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, #4857ffd0, #7ab9fcdf);
+        border: 0;
+        outline: none;
+        border-radius: 25px;
+    }
+
+    .checkbox{
+        margin: 30px 10px 30px 0;
+
+    }
+
+    span{
+        color: #838383;
+        font-size: 20x;
+        
+    }
+
+    #login{
+        left:100px;
+    }
+
+    #signin{
+        left: 600px;
+    }
+    
+
+
+
+
+</style>
+
+
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="button"></div>
+                <button type="button" class="btn" onclick="login()">LOGIN</button>
+                <button type="button" class="btn" onclick="signin()">SIGN IN</button>
+            </div>
+            <form id="login" class="input">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>  
+            <form id="signin" class="input">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+            
+
+
+        </div>
+        
+    </div>
+
+
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("signin");
+        var z=document.getElementById("button");
+
+        function signin(){
+            x.style.left="-400px";
+            y.style.left="100px";
+            z.style.left="120px"
+        }
+
+        function login(){
+            x.style.left="100px";
+            y.style.left="550px";
+            z.style.left="0px";
+        }
+        
+    </script>
+
+</body>
+</html>
